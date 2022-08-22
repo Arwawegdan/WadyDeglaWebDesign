@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+main {
+  position: relative;
+}
+header {
+  width: 100%;
+  min-height: 100px;
+  position: fixed;
+  background: linear-gradient(#555, #111);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  z-index: 909;
+}
+.logo{
+  margin-left: 50px;
+  width: 100px;
+  min-height: 100px;
+}
+.logo img {
+  height: 100px;
+}
+nav ul {
+  min-height: 100px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 25px;
+}
+nav ul li {
+  width: 200px;
+}
+nav ul li a {
+  text-decoration: none;
+  min-height: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  line-height: 100px;
+}
+nav ul li a:hover {
+  background-color: yellow;
+}
+/* ############################ */
+.first-content{
+  width: 100%;
+  height: 800px;
+  background-color: yellow;
+  position: relative;
+}
+.first-content>img {
+  height: 800px;
+  clip-path: circle(max(50% , 400px) at 50%  50%);
+}
+.first-content .search{
+  width: 200px;
+  height: 60px;
+  left: -150px ;
+  background-color: black;
+  position: fixed;
+  border-radius: 0 10px 10px 0;
+  top: 250px ;
+  border-radius: 0 10px 10px 0;
+  transition: 1s  ;
+  -webkit-transition: 1s  ;
+  -moz-transition: 1s  ;
+  -ms-transition: 1s  ;
+  -o-transition: 1s  ;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+.first-content .search img{
+  width: 50px;
+  position: absolute;
+  right: 0; 
+}
+.first-content .search:hover {
+  left: 0;
+  cursor: pointer;
+}
+/* ##################### */ 
+.second-section{
+  width: 100%;
+  height: 300px ;
+  z-index: 99;
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-around;
+}
+.second-section .block{
+  width: 330px;
+  height: 250px;
+  background-color:white;
+  margin-top: -80px ;
+  border-radius: 20px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  -o-border-radius: 20px ;
+  border : 1px solid yellow; 
+  z-index: 99;
+  overflow: hidden;
+}
+.second-section .block:first-of-type{
+  background-image : url(../images/footballacademy.jpg); 
+  background-size: 100% ;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.second-section .block:nth-of-type(2){
+  background-image : url(../images/tennisacademy.jpg); 
+  background-size: 100%  ;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.second-section .block:nth-of-type(3){
+  height: 250px ;
+  background-image : url(../images/squashacademy.jpg); 
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.second-section .block:last-of-type{
+  width: 310px ;
+  background-image : url(../images/swimmingacademy.jpg); 
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+.second-section .block .hovering{
+  background-color: yellow ;
+  width: 330px;
+  height: 250px;
+  overflow: hidden;
+  clip-path: circle(0 at 0  0 );
+  font-size: 30px;
+  font-weight: bold ;
+  transition: .5s ;
+  -webkit-transition: .5s ;
+  -moz-transition: .5s ;
+  -ms-transition: .5s ;
+  -o-transition: .5s ;
+}
+.second-section .block:hover .hovering {
+  clip-path: circle(60% at 0 0 );
+}
+/* ################### */ 
+.third-section{
+  width: 100%;
+  min-height: 400px ;
+}
+.third-section .third-section-content{ 
+  width: 100%;
+  min-height: 300px ;
+  position: relative;
+  display: flex; 
+  flex-flow : row wrap ;
+  justify-content: space-around;
+}
+.third-section hr{
+  display: block ;
+  width: 1000px ;
+  height: 5px ;
+  margin: auto ; 
+  background-color: blue ; 
+}
+.third-section > h1{
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold ;
+  color : blue ; 
+}
+.third-section-content .left{
+  margin-top: 50px;
+  width: 500px;
+  height: 280px;
+  overflow: hidden;
+  font-size: 25px;
+  text-align: justify;
+}
+.third-section-content .right{
+  margin-top: 50px;
+  background-image: url(../images/about.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  width: 550px;
+  height: 240px;
+}
+.third-section-content .right .overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #fff6;
+  clip-path: circle(0 at 50% 50%);
+  transition: all 1s ;
+  -webkit-transition: all 1s ;
+  -moz-transition: all 1s ;
+  -ms-transition: all 1s ;
+  -o-transition: all 1s ;
+}
+.third-section-content .right:hover .overlay{
+  clip-path: circle(100% at 50% 50%);
+}
+/*######################################################## */ 
+.forth-section{
+  width: 100%;
+  min-height: 400px ;
+}
+.forth-section hr{
+  display: block ;
+  width: 1000px ;
+  height: 5px ;
+  margin: auto ; 
+  background-color: blue ; 
+}
+.forth-section > h1{
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold ;
+  color : blue ; 
+}
+table{
+  margin: auto;
+  width: 500px ;
+  text-align: center ;
+  font-size: 40px ;
+  border-collapse: collapse;
+}
+table tr:nth-of-type(odd){
+  background-color: #5556;
+}
+.forth-section .second-section img{ 
+  width: 350px;
+}
+.forth-section .second-section figcaption{ 
+  width: 350px;
+  text-align: justify;
+  font-size: 25px;
+}
+/* ######################################################################################## */ 
+.last-section{
+  width: 100%; 
+  height: 500px ;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.last-section .left{
+width: 600px;
+height: 500px ;
+position: absolute;
+top: 50px; 
+left: 450px ;
+}
+.last-section .right iframe{
+width: 500px;
+height: 380px ;
+position: absolute;
+top: 50px; 
+right: 450px 
+}
+/* ###################################################################################### */ 
+.last-last-section iframe{
+  height: 400px ;
+  width: 100% ;
+}
+
+/* ###################################################################################### */ 
+
+footer{
+  height: 50px ;
+  background-color: grey ;
+  font-size: 20px ;
+text-align: center;
+line-height: 50px ;
+}
+
